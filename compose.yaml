@@ -1,0 +1,7 @@
+name: proxy
+services:
+  go-proxy:
+    build: ./go_proxy
+    image: localhost/go_proxy
+    ports:
+      - "3129:3129"
