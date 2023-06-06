@@ -5,6 +5,8 @@ WORKDIR /var/tmp
 COPY go.mod go.mod 
 COPY main.go main.go
 COPY go.sum go.sum
+COPY key.pem key.pem
+COPY cert.pem cert.pem
 
 RUN go build 
 
